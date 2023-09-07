@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">ERGASHOFF</a>
+  
+        <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <button onclick="loginf()" id="nav_btn">Login</button>
+        </nav>
+      </header>
+
+
+
+    <section id="section1">
+        <div class="menu">
+          <div class="log_box">
+            <div class="form_box">
+              <div class="title">
+                <h2>Kirish</h2>
+              </div>
+  
+              <div class="input_box">
+                <span class="icon"><i class="bx bx-envelope"></i></span>
+                <input type="text" required id="user" />
+                <label>Login</label>
+              </div>
+              
+                <div class="input_box">
+                  <span class="icon"><i class="bx bx-lock-alt"></i></span>
+                  <input type="password" required id="password" />
+                  <label>Parol</label>
+                </div>
+  
+              <div class="remember">
+                <label><input type="checkbox" />Meni eslab qol</label>
+                <a href="#">Parolni unutdingizmi?</a>
+              </div>
+  
+              <button onclick="addLocal()" type="submit" id="btn">Kirish</button>
+  
+              <div class="logreg_link">
+                <p>
+                  Akkauntingiz yo'qmi?
+                  <a href="#" class="register_link"> Ro'yxatdan o'tish</a>
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="option">
+            <a
+              href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=ru&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S319462828%3A1693922347004856&theme=glif"
+            >
+              <i class="bx bxl-google"></i>
+              <span>Google orqali kirish</span>
+            </a>
+  
+            <a href="https://facebook.com">
+              <i class="bx bxl-facebook-circle"></i>
+              <span>Facebook orqali kirish</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <script src="./js/mainn.js"></script>
+</body>
+</html>

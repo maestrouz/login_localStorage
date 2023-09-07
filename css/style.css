@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    cursor: url(../images/cursor1.png), auto;
+
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 55;
+  
+}
+.logo {
+  font-size: 32px;
+  color: #0d3443;
+  text-decoration: none;
+  font-weight: 700;
+  pointer-events: none;
+  font-family: "Play", sans-serif;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #0d3443;
+  font-weight: 500;
+  margin-right: 40px;
+  font-family: "Play", sans-serif;
+  cursor: url(../images/cursor\ 2.png), auto;
+}
+
+.navbar #nav_btn {
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #0d3443;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Play", sans-serif;
+  cursor: url(../images/cursor\ 2.png), auto;
+
+}
+
+.navbar #nav_btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #082430;
+  left: 0;
+  bottom: -4px;
+  opacity: 0.85;
+}
+
+#section1 {
+  min-height: 100vh;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 100%;
+  background: #082430;
+  z-index: 66;
+  flex-direction: column;
+  box-shadow: -1px 0 10px rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.log_box {
+  width: 100%;
+  background: #0d3443;
+}
+
+.title {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #9eccc8;
+}
+
+.title h2 {
+  font-size: 32px;
+  font-family: "Play", sans-serif;
+}
+
+.title p {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Play", sans-serif;
+}
+
+.input_box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: #082430;
+  margin: 30px 0;
+  border-bottom: 2px solid #9eccc8;
+}
+
+.input_box input {
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #9eccc8;
+  font-family: "Play", sans-serif;
+  font-weight: 500;
+  padding-right: 30px;
+}
+
+.input_box label {
+  padding-left: 10px;
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  font-family: "Play", sans-serif;
+  color: #9eccc8;
+  font-weight: 600;
+}
+
+.input_box .icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.remember {
+  display: flex;
+  font-size: 14px;
+  color: #9eccc8;
+  margin: -15px 0 15px;
+  justify-content: space-between;
+  font-family: "Play", sans-serif;
+}
+
+.remember label input {
+  accent-color: #2e5552;
+  margin-right: 3px;
+}
+
+.remember a {
+  color: #9eccc8;
+  text-decoration: none;
+}
+
+.remember a:hover {
+  text-decoration: underline;
+}
+
+#btn {
+  margin-left: 50px;
+  width: 80%;
+  height: 45px;
+  background: #082430;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Play", sans-serif;
+  font-weight: 600;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  color: #9eccc8;
+}
+
+#btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.5s;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logreg_link {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 25px;
+  color: #9eccc8;
+  font-family: "Play", sans-serif;
+  margin: 25px 0 15px;
+}
+
+.logreg_link p a {
+  color: #9eccc8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logreg_link p a:hover {
+  text-decoration: underline;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option a {
+  display: inline-flex;
+  width: 100%;
+  height: 50px;
+  border: 2px solid #2e5552;
+  border-radius: 2px;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-family: "Play", sans-serif;
+  color: #9eccc8;
+  transition: 0.5s;
+}
+
+.option a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.option i {
+  font-size: 22px;
+  margin: 0 8px 1.5px 0;
+}
+
+.option span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Button */
+
+body {
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+ul {
+  max-width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+ul li {
+  display: inline-block;
+  list-style-type: none;
+  color: #484848;
+  font-size: 10vw;
+  letter-spacing: 15px;
+  margin-bottom: 15px;
+  animation: flash 0.8s linear infinite;
+}
+
+@keyframes flash {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #00ccff;
+    text-shadow: 0 0 8px #00ffff, 0 0 50px #00ccff;
+  }
+}
+
+ul li:nth-child(1) {
+  animation-delay: 1.1s;
+}
+ul li:nth-child(2) {
+  animation-delay: 1.2s;
+}
+ul li:nth-child(3) {
+  animation-delay: 1.3s;
+}
+ul li:nth-child(4) {
+  animation-delay: 1.4s;
+}
+ul li:nth-child(5) {
+  animation-delay: 1.5s;
+}
+ul li:nth-child(6) {
+  animation-delay: 1.6s;
+}
+ul li:nth-child(7) {
+  animation-delay: 1.7s;
+}
